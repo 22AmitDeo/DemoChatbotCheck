@@ -39,6 +39,7 @@ def home():
     debates = cursor.fetchall()
     conn.close()
     return render_template("index.html", debates=debates)
+#asdf
 
 @app.route("/debate", methods=["POST"])
 def debate():
